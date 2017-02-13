@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVAudioiPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ren'eLiu" translatesAutoresizingMaskIntoConstraints="NO" id="9Nw-Th-uRJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqd-fb-ZuL">
+                                <rect key="frame" x="0.0" y="507" width="375" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiZ-rr-ei7">
+                                        <rect key="frame" x="8" y="17" width="241" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="xAd-ec-5JA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDX-uP-ocE">
+                                        <rect key="frame" x="316" y="7" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Y47-UG-mKV"/>
+                                            <constraint firstAttribute="width" constant="40" id="vae-pq-TNp"/>
+                                        </constraints>
+                                        <state key="normal" image="playing_btn_love"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbP-iv-0zg">
+                                        <rect key="frame" x="265" y="7" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="7i1-2y-5qw"/>
+                                            <constraint firstAttribute="height" constant="40" id="Ham-xL-H7z"/>
+                                        </constraints>
+                                        <state key="normal" image="nowplaying_download_btn"/>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kY0-CJ-cMn">
+                                        <rect key="frame" x="8" y="51" width="359" height="2"/>
+                                    </progressView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ux4-XM-vLT">
+                                        <rect key="frame" x="8" y="50" width="359" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRR-SJ-gxt">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="110"/>
+                                                <state key="normal" image="playing_btn_pre_h"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZi-zK-dff">
+                                                <rect key="frame" x="123" y="0.0" width="113" height="110"/>
+                                                <state key="normal" image="playing_btn_play_h"/>
+                                                <connections>
+                                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leA-W8-aYr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sim-ow-Yc1">
+                                                <rect key="frame" x="246" y="0.0" width="113" height="110"/>
+                                                <state key="normal" image="playing_btn_next_h"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="hSS-3N-dBN"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="kY0-CJ-cMn" firstAttribute="top" secondItem="Xqd-fb-ZuL" secondAttribute="top" constant="51" id="4Sv-uR-6jV"/>
+                                    <constraint firstItem="bbP-iv-0zg" firstAttribute="leading" secondItem="hiZ-rr-ei7" secondAttribute="trailing" constant="16" id="8Up-d1-7y3"/>
+                                    <constraint firstItem="Ux4-XM-vLT" firstAttribute="top" secondItem="hiZ-rr-ei7" secondAttribute="bottom" constant="12" id="8qI-9a-0BK"/>
+                                    <constraint firstItem="Ux4-XM-vLT" firstAttribute="top" secondItem="bbP-iv-0zg" secondAttribute="bottom" constant="3" id="Kb1-HS-T1c"/>
+                                    <constraint firstItem="hiZ-rr-ei7" firstAttribute="leading" secondItem="Xqd-fb-ZuL" secondAttribute="leading" constant="8" id="XVs-fK-adL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ux4-XM-vLT" secondAttribute="bottom" id="Z85-MP-xVr"/>
+                                    <constraint firstItem="kY0-CJ-cMn" firstAttribute="leading" secondItem="Xqd-fb-ZuL" secondAttribute="leading" constant="8" id="a0g-Yv-KUT"/>
+                                    <constraint firstItem="Ux4-XM-vLT" firstAttribute="leading" secondItem="Xqd-fb-ZuL" secondAttribute="leading" constant="8" id="eo4-eI-TQ9"/>
+                                    <constraint firstItem="LDX-uP-ocE" firstAttribute="leading" secondItem="bbP-iv-0zg" secondAttribute="trailing" constant="11" id="iWe-xh-8yr"/>
+                                    <constraint firstItem="Ux4-XM-vLT" firstAttribute="top" secondItem="LDX-uP-ocE" secondAttribute="bottom" constant="3" id="m39-dr-A7f"/>
+                                    <constraint firstAttribute="height" constant="160" id="oo8-uu-klk"/>
+                                    <constraint firstAttribute="trailing" secondItem="LDX-uP-ocE" secondAttribute="trailing" constant="19" id="t07-cc-7OK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ux4-XM-vLT" secondAttribute="trailing" constant="8" id="ufm-N6-HsA"/>
+                                    <constraint firstAttribute="trailing" secondItem="kY0-CJ-cMn" secondAttribute="trailing" constant="8" id="zJ9-Vl-aRX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Nw-Th-uRJ" secondAttribute="bottom" id="4LT-lr-jqQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Xqd-fb-ZuL" secondAttribute="trailing" id="EhH-qF-31N"/>
+                            <constraint firstItem="9Nw-Th-uRJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RLK-MK-95y"/>
+                            <constraint firstItem="9Nw-Th-uRJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VVC-uA-X26"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xqd-fb-ZuL" secondAttribute="bottom" id="aog-m1-hh7"/>
+                            <constraint firstAttribute="trailing" secondItem="9Nw-Th-uRJ" secondAttribute="trailing" id="iHe-wS-eZd"/>
+                            <constraint firstItem="Xqd-fb-ZuL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s3j-Mg-SCx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="musicSingerLabel" destination="hiZ-rr-ei7" id="Iif-PD-Pi7"/>
+                        <outlet property="playOrPauseButton" destination="bZi-zK-dff" id="RfJ-2l-Cfm"/>
+                        <outlet property="playProgress" destination="kY0-CJ-cMn" id="wsU-Ah-sp7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ren'eLiu" width="550" height="745"/>
+        <image name="nowplaying_download_btn" width="40" height="40"/>
+        <image name="playing_btn_love" width="40" height="40"/>
+        <image name="playing_btn_next_h" width="40" height="40"/>
+        <image name="playing_btn_play_h" width="65" height="65"/>
+        <image name="playing_btn_pre_h" width="40" height="40"/>
+    </resources>
+</document>
