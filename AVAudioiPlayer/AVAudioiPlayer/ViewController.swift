@@ -88,17 +88,19 @@ class ViewController: UIViewController {
      *  @param notification 输出改变通知对象
      */
     func routeChange(noti: Notification) {
-//        let dic : NSDictionary = [AVAudioSessionRouteChangeReasonKey : AVAudioSessionRouteChangeReason.newDeviceAvailable.rawValue ]
-        let dic = noti.userInfo as! [AVAudioSessionRouteChangeReasonKey : AVAudioSessionRouteChangeReason.newDeviceAvailable.rawValue ]
-            let changeReason = UInt(dic[AVAudioSessionRouteChangeReasonKey]!)
-            switch changeReason {
-            case AVAudioSessionRouteChangeReason.oldDeviceUnavailable:
-                print("sdfs")
-                break
-            default:
-                break
+        let dic = noti.userInfo
+        if let changeReason = dic?[AVAudioSessionRouteChangeReasonKey] as? UInt {
+            
+            if changeReason == AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue {
+                if let routeDescription = dic?[AVAudioSessionRouteChangePreviousRouteKey] as? AVAudioSessionRouteDescription {
+                    let portDescription = routeDescription.outputs.first
+                    //原设备为耳机则暂停
+                    if portDescription?.portType == "Headphones" {
+                        audioPause()
+                    }
+                }
             }
-        
+        }
     }
     
     // MARK: 开始播放
