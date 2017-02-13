@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVAudioRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lyjbjt" translatesAutoresizingMaskIntoConstraints="NO" id="vM9-Qm-rlG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vwn-Ig-gd6">
+                                <rect key="frame" x="23" y="132" width="320" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Rl0-Tt-69N"/>
+                                </constraints>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="At8-f5-fG9">
+                                <rect key="frame" x="25" y="506" width="334" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSS-CQ-0lG">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="110"/>
+                                        <state key="normal" image="lyj_lyan"/>
+                                        <connections>
+                                            <action selector="recordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="laO-yx-q7H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQS-io-OgY">
+                                        <rect key="frame" x="85" y="0.0" width="79.5" height="110"/>
+                                        <state key="normal" image="lyj_atan"/>
+                                        <connections>
+                                            <action selector="pauseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPt-vr-AfO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjA-Eo-YDm">
+                                        <rect key="frame" x="169.5" y="0.0" width="80" height="110"/>
+                                        <state key="normal" image="lyj_bfq_bfan"/>
+                                        <connections>
+                                            <action selector="resumeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tct-Px-545"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI8-Hh-2dK">
+                                        <rect key="frame" x="254.5" y="0.0" width="79.5" height="110"/>
+                                        <state key="normal" image="lyj_tian"/>
+                                        <connections>
+                                            <action selector="stopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tze-fV-Gc8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="APq-KH-M7v"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vM9-Qm-rlG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="B0D-Fx-vGk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vM9-Qm-rlG" secondAttribute="bottom" id="Bap-sE-Jdy"/>
+                            <constraint firstItem="Vwn-Ig-gd6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="23" id="DNy-a3-wqx"/>
+                            <constraint firstAttribute="trailing" secondItem="vM9-Qm-rlG" secondAttribute="trailing" id="F1g-uG-e7f"/>
+                            <constraint firstItem="Vwn-Ig-gd6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="112" id="VXq-B8-om4"/>
+                            <constraint firstItem="At8-f5-fG9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="bHd-xf-ZJa"/>
+                            <constraint firstItem="vM9-Qm-rlG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i1Y-CY-6jK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="At8-f5-fG9" secondAttribute="bottom" constant="51" id="jmu-VX-MYU"/>
+                            <constraint firstAttribute="trailing" secondItem="Vwn-Ig-gd6" secondAttribute="trailing" constant="32" id="mHS-vF-Vxx"/>
+                            <constraint firstAttribute="trailing" secondItem="At8-f5-fG9" secondAttribute="trailing" constant="16" id="o2d-B7-NJm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioPower" destination="Vwn-Ig-gd6" id="69v-AP-Unz"/>
+                        <outlet property="pauseButton" destination="TQS-io-OgY" id="PMv-T0-ovz"/>
+                        <outlet property="recordButton" destination="mSS-CQ-0lG" id="Nwt-h6-Baa"/>
+                        <outlet property="resumeButton" destination="fjA-Eo-YDm" id="bYi-nH-tfk"/>
+                        <outlet property="stopButton" destination="gI8-Hh-2dK" id="osa-66-wbZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lyj_atan" width="52" height="52"/>
+        <image name="lyj_bfq_bfan" width="52" height="52"/>
+        <image name="lyj_lyan" width="52" height="52"/>
+        <image name="lyj_tian" width="52" height="52"/>
+        <image name="lyjbjt" width="320" height="480"/>
+    </resources>
+</document>
