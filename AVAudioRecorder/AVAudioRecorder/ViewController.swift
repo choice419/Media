@@ -118,7 +118,7 @@ class ViewController: UIViewController {
     //设置定时器
     func setTimer() {
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(audioPowerChange), userInfo: nil, repeats: true)
-        timer.invalidate()
+        timer.fireDate = NSDate.distantFuture
     }
     
     /**
