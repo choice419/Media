@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F690FE9A1E52ACBE00000C4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FE991E52ACBE00000C4E /* AppDelegate.swift */; };
+		F690FE9C1E52ACBE00000C4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FE9B1E52ACBE00000C4E /* ViewController.swift */; };
+		F690FE9F1E52ACBE00000C4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F690FE9D1E52ACBE00000C4E /* Main.storyboard */; };
+		F690FEA11E52ACBE00000C4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F690FEA01E52ACBE00000C4E /* Assets.xcassets */; };
+		F690FEA41E52ACBE00000C4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F690FEA21E52ACBE00000C4E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F690FE961E52ACBE00000C4E /* AudioQueueServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioQueueServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F690FE991E52ACBE00000C4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F690FE9B1E52ACBE00000C4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F690FE9E1E52ACBE00000C4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F690FEA01E52ACBE00000C4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F690FEA31E52ACBE00000C4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F690FEA51E52ACBE00000C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F690FE931E52ACBE00000C4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F690FE8D1E52ACBE00000C4E = {
+			isa = PBXGroup;
+			children = (
+				F690FE981E52ACBE00000C4E /* AudioQueueServices */,
+				F690FE971E52ACBE00000C4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F690FE971E52ACBE00000C4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F690FE961E52ACBE00000C4E /* AudioQueueServices.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F690FE981E52ACBE00000C4E /* AudioQueueServices */ = {
+			isa = PBXGroup;
+			children = (
+				F690FE991E52ACBE00000C4E /* AppDelegate.swift */,
+				F690FE9B1E52ACBE00000C4E /* ViewController.swift */,
+				F690FE9D1E52ACBE00000C4E /* Main.storyboard */,
+				F690FEA01E52ACBE00000C4E /* Assets.xcassets */,
+				F690FEA21E52ACBE00000C4E /* LaunchScreen.storyboard */,
+				F690FEA51E52ACBE00000C4E /* Info.plist */,
+			);
+			path = AudioQueueServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F690FE951E52ACBE00000C4E /* AudioQueueServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F690FEA81E52ACBE00000C4E /* Build configuration list for PBXNativeTarget "AudioQueueServices" */;
+			buildPhases = (
+				F690FE921E52ACBE00000C4E /* Sources */,
+				F690FE931E52ACBE00000C4E /* Frameworks */,
+				F690FE941E52ACBE00000C4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioQueueServices;
+			productName = AudioQueueServices;
+			productReference = F690FE961E52ACBE00000C4E /* AudioQueueServices.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F690FE8E1E52ACBE00000C4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = choice;
+				TargetAttributes = {
+					F690FE951E52ACBE00000C4E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F690FE911E52ACBE00000C4E /* Build configuration list for PBXProject "AudioQueueServices" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F690FE8D1E52ACBE00000C4E;
+			productRefGroup = F690FE971E52ACBE00000C4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F690FE951E52ACBE00000C4E /* AudioQueueServices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F690FE941E52ACBE00000C4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F690FEA41E52ACBE00000C4E /* LaunchScreen.storyboard in Resources */,
+				F690FEA11E52ACBE00000C4E /* Assets.xcassets in Resources */,
+				F690FE9F1E52ACBE00000C4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F690FE921E52ACBE00000C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F690FE9C1E52ACBE00000C4E /* ViewController.swift in Sources */,
+				F690FE9A1E52ACBE00000C4E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F690FE9D1E52ACBE00000C4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F690FE9E1E52ACBE00000C4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F690FEA21E52ACBE00000C4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F690FEA31E52ACBE00000C4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F690FEA61E52ACBE00000C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F690FEA71E52ACBE00000C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F690FEA91E52ACBE00000C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AudioQueueServices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.windward.AudioQueueServices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F690FEAA1E52ACBE00000C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AudioQueueServices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.windward.AudioQueueServices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F690FE911E52ACBE00000C4E /* Build configuration list for PBXProject "AudioQueueServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F690FEA61E52ACBE00000C4E /* Debug */,
+				F690FEA71E52ACBE00000C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F690FEA81E52ACBE00000C4E /* Build configuration list for PBXNativeTarget "AudioQueueServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F690FEA91E52ACBE00000C4E /* Debug */,
+				F690FEAA1E52ACBE00000C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F690FE8E1E52ACBE00000C4E /* Project object */;
+}
